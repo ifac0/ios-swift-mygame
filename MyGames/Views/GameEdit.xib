@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddEditViewController" customModule="MyGames" customModuleProvider="target">
+            <connections>
+                <outlet property="btAddEdit" destination="Jfd-WR-nMV" id="gbt-aC-uGe"/>
+                <outlet property="btCover" destination="YOm-17-ob8" id="soh-XB-51E"/>
+                <outlet property="dpReleaseDate" destination="0Mz-gO-wLr" id="zxt-22-jez"/>
+                <outlet property="ivCover" destination="woM-Gx-3rT" id="pNo-IA-HYD"/>
+                <outlet property="tfConsole" destination="c2r-if-qSs" id="Adk-dT-R6M"/>
+                <outlet property="tfTitle" destination="GtX-yR-4qm" id="j88-0P-YZy"/>
+                <outlet property="view" destination="iN0-l3-epB" id="LlB-Mq-woL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOm-17-ob8">
+                    <rect key="frame" x="36" y="477" width="342" height="307"/>
+                    <state key="normal" title="Toque para adicionar uma imagem de capa"/>
+                    <connections>
+                        <action selector="AddEditCover:" destination="-1" eventType="touchUpInside" id="ey7-G3-DwI"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome da Plataforma" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c2r-if-qSs">
+                    <rect key="frame" x="16" y="134" width="382" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data de Lançamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsH-bc-tJ8">
+                    <rect key="frame" x="16" y="192" width="382" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="0Mz-gO-wLr">
+                    <rect key="frame" x="16" y="242.5" width="382" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="jSm-kl-wqA"/>
+                    </constraints>
+                </datePicker>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfj-0i-fCi">
+                    <rect key="frame" x="16" y="426.5" width="382" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome do Jogo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GtX-yR-4qm">
+                    <rect key="frame" x="16" y="76" width="382" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="woM-Gx-3rT">
+                    <rect key="frame" x="36" y="477" width="342" height="307"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfd-WR-nMV">
+                    <rect key="frame" x="32" y="808" width="350" height="30"/>
+                    <color key="backgroundColor" name="main"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="mp9-IW-zkU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <state key="normal" title="SALVAR">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="addEditGame:" destination="-1" eventType="touchUpInside" id="tHZ-mB-2Tv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="woM-Gx-3rT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="36" id="0hS-7g-EiZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Jfd-WR-nMV" secondAttribute="bottom" constant="24" id="1X0-zp-W3K"/>
+                <constraint firstItem="Jfd-WR-nMV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="3kP-Rs-EZu"/>
+                <constraint firstItem="c2r-if-qSs" firstAttribute="width" secondItem="GtX-yR-4qm" secondAttribute="width" id="61c-rZ-Hq9"/>
+                <constraint firstItem="YOm-17-ob8" firstAttribute="height" secondItem="woM-Gx-3rT" secondAttribute="height" id="AqP-Xx-9yo"/>
+                <constraint firstItem="Vfj-0i-fCi" firstAttribute="width" secondItem="0Mz-gO-wLr" secondAttribute="width" id="CL3-go-j9G"/>
+                <constraint firstItem="woM-Gx-3rT" firstAttribute="top" secondItem="Vfj-0i-fCi" secondAttribute="bottom" constant="24" id="CiT-Qw-fx3"/>
+                <constraint firstItem="Jfd-WR-nMV" firstAttribute="top" secondItem="woM-Gx-3rT" secondAttribute="bottom" constant="24" id="DYs-e4-puA"/>
+                <constraint firstItem="hsH-bc-tJ8" firstAttribute="top" secondItem="c2r-if-qSs" secondAttribute="bottom" constant="24" id="Hm9-rO-OfA"/>
+                <constraint firstItem="hsH-bc-tJ8" firstAttribute="leading" secondItem="c2r-if-qSs" secondAttribute="leading" id="IFC-6Y-cbB"/>
+                <constraint firstItem="0Mz-gO-wLr" firstAttribute="leading" secondItem="hsH-bc-tJ8" secondAttribute="leading" id="KQX-HO-mLS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="woM-Gx-3rT" secondAttribute="trailing" constant="36" id="Q7e-un-tFD"/>
+                <constraint firstItem="0Mz-gO-wLr" firstAttribute="top" secondItem="hsH-bc-tJ8" secondAttribute="bottom" constant="24" id="QEL-Zw-bq1"/>
+                <constraint firstItem="YOm-17-ob8" firstAttribute="centerY" secondItem="woM-Gx-3rT" secondAttribute="centerY" id="Qg7-YA-tZx"/>
+                <constraint firstItem="YOm-17-ob8" firstAttribute="width" secondItem="woM-Gx-3rT" secondAttribute="width" id="T5O-HJ-ol4"/>
+                <constraint firstItem="Vfj-0i-fCi" firstAttribute="top" secondItem="0Mz-gO-wLr" secondAttribute="bottom" constant="24" id="Wvd-fY-jNf"/>
+                <constraint firstItem="hsH-bc-tJ8" firstAttribute="width" secondItem="c2r-if-qSs" secondAttribute="width" id="Xn8-pp-u4p"/>
+                <constraint firstItem="0Mz-gO-wLr" firstAttribute="width" secondItem="hsH-bc-tJ8" secondAttribute="width" id="jdl-YO-dAD"/>
+                <constraint firstItem="YOm-17-ob8" firstAttribute="centerX" secondItem="woM-Gx-3rT" secondAttribute="centerX" id="jlm-Bb-PGz"/>
+                <constraint firstItem="GtX-yR-4qm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="32" id="lsq-PN-IZ7"/>
+                <constraint firstItem="c2r-if-qSs" firstAttribute="leading" secondItem="GtX-yR-4qm" secondAttribute="leading" id="p8U-nn-xXH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GtX-yR-4qm" secondAttribute="trailing" constant="16" id="pb6-Pn-RZa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Jfd-WR-nMV" secondAttribute="trailing" constant="32" id="r5T-d1-SPA"/>
+                <constraint firstItem="GtX-yR-4qm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="scn-SR-qO9"/>
+                <constraint firstItem="c2r-if-qSs" firstAttribute="top" secondItem="GtX-yR-4qm" secondAttribute="bottom" constant="24" id="ut3-8K-01k"/>
+                <constraint firstItem="Vfj-0i-fCi" firstAttribute="leading" secondItem="0Mz-gO-wLr" secondAttribute="leading" id="xL7-M1-ySN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="main">
+            <color red="0.0" green="0.68235294117647061" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
