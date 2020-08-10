@@ -130,6 +130,11 @@ class GamesTableViewController: UITableViewController {
 
 extension GamesTableViewController: UISearchResultsUpdating, UISearchBarDelegate {
     
+    func updateSearchResults(for searchController: UISearchController) {
+        loadGames()
+        tableView.reloadData()
+    }
+    
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         loadGames()
         tableView.reloadData()
